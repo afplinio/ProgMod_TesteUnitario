@@ -49,8 +49,9 @@
         this.horas = horas;
         this.minutos = minutos;
         this.segundos = segundos;
-        if(!ehValida())
-            horas = minutos = segundos = 0;
+        if(!ehValida()){
+            this.horas = this.minutos = this.segundos = 0;
+        }
     }
 
     /**
